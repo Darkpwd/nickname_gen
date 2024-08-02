@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container main-content">
+    <h2>Gerador de Nicks</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="n">Quantidade de nicks:</label>
+        <input type="number" id="n" name="n" min="1" required>
+        <button type="submit">Gerar</button>
+    </form>
+
+    {% if nicknames %}
+        <h3>Lista de Nicks Gerados:</h3>
+        <ul>
+            {% for nickname in nicknames %}
+                <li>{{ nickname }}</li>
+            {% endfor %}
+        </ul>
+        <br>
+    {% endif %}
+</div>
+
+<script src="{% static 'js/forms.js' %}">
+    
+</script>
+{% endblock %}
