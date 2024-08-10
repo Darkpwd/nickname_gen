@@ -3,35 +3,12 @@ import random
 
 def generate_nicks(n):
     names = [
-        'Accidental Genius',
-        'Gerald Theking',
-        'Buckshot',
-        'ALappy',
-        'Diablo',
-        'Wrath',
-        'Pain',
-        'Trigger Kill',
-        'Callyping',
-        'Skull Crusher',
-        'Titanium',
-        'Cosma',
-        'Smoke-Air',
-        'Head-Fire',
-        'Victorious',
-        'Hellblade',
-        'Savior',
-        'Gladiator',
-        'Mercenary',
-        'Berserker',
-        'Scourge',	
-        'Bunny',
-        'Billy',
-        'Scooby-Doo',
-        'Dynamo',
-        'Batman',
-        'Robin',
+        'Accidental Genius', 'Gerald Theking', 'Buckshot', 'ALappy', 'Diablo', 'Wrath',
+        'Pain', 'Trigger Kill', 'Callyping', 'Skull Crusher', 'Titanium', 'Cosma',
+        'Smoke-Air', 'Head-Fire', 'Victorious', 'Hellblade', 'Savior', 'Gladiator',
+        'Mercenary', 'Berserker', 'Scourge', 'Bunny', 'Billy', 'Scooby-Doo', 'Dynamo',
+        'Batman', 'Robin',
     ]
-    
 
     nicks = []
     for _ in range(n):
